@@ -1,0 +1,2 @@
+﻿
+grunt generateData && grunt generateContracts

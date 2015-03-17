@@ -1,0 +1,25 @@
+{
+	"name": "SEAP2",
+	"devContact": "Ben Sidelinger x6978",
+	"folder": "seap2",
+	"minFolder": "SEAP2min",
+	"version": "5.0.9",
+	"localDrive": "F",
+	"janeDrive": "J",
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-contrib-jshint": "~0.6.3",
+		"grunt-contrib-nodeunit": "~0.2.0",
+		"grunt-contrib-uglify": "~0.2.2",
+		"grunt-contrib-copy": "0.4.x",
+		"grunt-mkdir": "0.1.x",
+		"grunt-prompt": "^1.1.0",
+		"grunt-open": "^0.2.3",
+		"grunt-string-replace": "^0.2.7",
+		"grunt-ipsum": "0.1.x",
+		"grunt-convert": "0.1.x",
+		"grunt-contrib-clean": "0.6.x",
+		"load-grunt-tasks": "1.0.x",
+		"grunt-folder-list": "1.1.x"
+	}
+}
