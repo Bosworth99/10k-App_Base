@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Secure Message Center - External",
   "dependencies": {
+    "orca-lni-utils-backbone-sync-shim": "https://orcasoftware@bitbucket.org/orcasoftware/lni-utils-backbone-sync-shim.git",
     "marionette": "~2.4.1",
     "momentjs": "~2.9.0",
     "underscore.string": "~3.0.3",
@@ -11,6 +12,7 @@
   "authors": [
     "josh@joshbosworth.com"
   ],
+  "main": "Javascript/app.js",
   "license": "MIT",
   "private": true,
   "ignore": [

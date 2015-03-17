@@ -1,0 +1,15 @@
+{
+  "name": "SMCUI2",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"running\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://josh_bosworth@bitbucket.org/josh_bosworth/orca-lni-smc_external.git"
+  },
+  "author": "josh@joshbosworth.com",
+  "license": "MIT"
+}

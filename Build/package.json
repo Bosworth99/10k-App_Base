@@ -1,10 +1,10 @@
 {
-	"name": "SEAP2",
-	"devContact": "Ben Sidelinger x6978",
-	"folder": "seap2",
-	"minFolder": "SEAP2min",
-	"version": "5.0.9",
-	"localDrive": "F",
+	"name": "SMCUI2",
+	"devContact": "Josh Bosworth",
+	"folder": "smcui2",
+	"minFolder": "SMCUI2",
+	"version": "0.0.1",
+	"localDrive": "D",
 	"janeDrive": "J",
 	"devDependencies": {
 		"grunt": "~0.4.2",

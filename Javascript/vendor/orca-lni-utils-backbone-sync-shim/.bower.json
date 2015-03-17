@@ -1,0 +1,27 @@
+{
+  "name": "orca-lni-utils-backbone-sync-shim",
+  "main": "backbone.sync.shim.js",
+  "version": "1.0.1",
+  "authors": [
+    "Tom Gruner"
+  ],
+  "description": "A shim to overwrite Backbone.sync to seamlessly integrate with the LNI API.",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.1",
+    "commit": "c8db177a449dd2eb03ff8ff181cd3faec4725b1c"
+  },
+  "_source": "https://orcasoftware@bitbucket.org/orcasoftware/lni-utils-backbone-sync-shim.git",
+  "_target": "*",
+  "_originalSource": "https://orcasoftware@bitbucket.org/orcasoftware/lni-utils-backbone-sync-shim.git"
+}

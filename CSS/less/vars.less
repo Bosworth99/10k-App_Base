@@ -1,0 +1,110 @@
+//////////////////////////////////////////////////////////////////////////////  
+//
+//  TYPE    - vars.less
+//  AUTHOR  - josh@joshbosworth.com
+// 
+//              
+//////////////////////////////////////////////////////////////////////////////  
+ 
+// Base Colors //////////////////////////////////////////////////////////////
+ 
+@color-primary              : #FFFFFF;
+@color-primary-hi           : lighten(@color-primary, 8%);
+@color-primary-lo           : darken(@color-primary, 8%);
+ 
+@color-secondary            : #E4E4E4;
+@color-secondary-hi         : lighten(@color-secondary, 5%);
+@color-secondary-lo         : darken(@color-secondary, 5%);
+ 
+@color-header               : #FFFFFF;
+@color-header-hi            : lighten(#FFFFFF, 5%);
+@color-header-lo            : darken(#FFFFFF, 5%);
+ 
+@color-body                 : #FFFFFF;
+ 
+@color-footer               : #FFFFFF;
+@color-footer-hi            : lighten(@color-footer, 8%);
+@color-footer-lo            : darken(@color-footer, 8%);
+ 
+@color-darkest              : #000;
+@color-darker               : #222;
+@color-dark                 : #444;
+@color-mid                  : #999;
+@color-light                : #ddd;
+@color-lighter              : #eee;
+@color-lightest             : #fff;
+ 
+// TYPOGRAPHY ////////////////////////////////////////////////////////////////
+ 
+@font-primary               : @color-dark; 
+@font-primary-hi            : @color-dark;
+@font-primary-lo            : @color-dark;
+ 
+@font-secondary             : @color-dark;
+@font-secondary-hi          : @color-dark;
+@font-secondary-lo          : @color-dark;
+ 
+@font-header                : @color-dark;  
+@font-header-hi             : '';
+@font-header-lo             : @color-darker;
+ 
+@font-callout               : @color-dark;
+@font-callout-hi            : '';
+@font-callout-lo            : '';
+ 
+@font-footer                : @color-dark;
+@font-footer-hi             : @color-dark;
+@font-footer-low            : @color-dark;
+ 
+@font-darkest               : @color-darkest; 
+@font-darker                : @color-darker; 
+@font-dark                  : @color-dark; 
+@font-mid                   : @color-mid;
+@font-light                 : @color-light;
+@font-lighter               : @color-lighter;
+@font-lightest              : @color-lightest;
+ 
+// LINKS /////////////////////////////////////////////////////////////////////
+ 
+@link-primary-up            : @font-primary;
+@link-primary-over          : @font-primary-hi;
+ 
+@link-secondary-up          : @font-secondary;
+@link-secondary-over        : @font-secondary-hi;
+ 
+@link-header-up             : @font-dark;
+@link-header-over           : @font-darkest;
+ 
+@link-nav-up                : @font-dark;
+@link-nav-over              : @font-darkest;
+ 
+@link-footer-up             : @font-dark;
+@link-footer-over           : @font-darkest;
+ 
+@link-stack                 : @color-dark;
+ 
+// ICONS /////////////////////////////////////////////////////////////////////
+ 
+@icon-light                 : @color-lightest;
+@icon-dark                  : @color-dark;
+@icon-primary               : @color-primary;
+@icon-secondary             : @color-secondary;
+ 
+// Buttons ///////////////////////////////////////////////////////////////////
+ 
+@button-input               : @color-secondary;
+@button-input-border        : @color-secondary-lo;
+@button-input-color         : @font-lightest;
+ 
+@button-input-hover         : @color-secondary-hi;
+@button-input-hover-border  : @color-secondary-lo;
+@button-input-hover-color   : @font-lightest;
+ 
+@button-input-active        : @color-secondary-lo;
+@button-input-active-border : @color-secondary-lo;
+@button-input-active-color  : @font-lighter;
+ 
+// Selection //////////////////////////////////////////////////////////////////
+ 
+@selection                  : @color-secondary;
+@img-selection              : transparent;

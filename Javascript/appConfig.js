@@ -3,7 +3,7 @@ var ewnGlobals = {};
 
 ewnGlobals.config = {
     headertype: 'saw',
-    footertype: 'simple',
+    footertype: 'mylni',
     appname: "SEAP",
-    apptitle: "My Secure L&I"
+    apptitle: "Secure Message Center"
 };

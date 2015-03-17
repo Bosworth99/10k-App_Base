@@ -10,18 +10,18 @@
     <title>$appName$</title>
 
     <!--[if lte IE 8]>
-        <script src="Javascript/flagOldIe.js"></script>
+        <script src="Javascript/vendor/flagOldIe.js"></script>
     <![endif]-->
 
     <!--[if lte IE 7]>
-        <script type="text/javascript" src="Javascript/json2.js"></script>
+        <script type="text/javascript" src="Javascript/vendor/json2.js"></script>
     <![endif]--> 
 
 </head>
 <body>
 
     <script src="Javascript/appConfig.js"></script>
-    <script controller="Javascript/controllers/mainController.js" src="<%=EWNBase%>/Javascript/ewnHeader.js"></script>
+    <script controller="Javascript/index.js" src="<%=EWNBase%>/Javascript/ewnHeader.js"></script>
 
     <!-- page scripts -->
     <script src="Javascript/globals.js"></script>
