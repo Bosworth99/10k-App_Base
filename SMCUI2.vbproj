@@ -117,16 +117,16 @@
     <Content Include="Build\r.js" />
     <Content Include="Default.aspx" />
     <Content Include="Javascript\appConfig.js" />
-    <Content Include="Javascript\collections\testCollection.js" />
-    <Content Include="Javascript\controllers\testController.js" />
-    <Content Include="Javascript\flagOldIe.js" />
+    <Content Include="Javascript\app\collections\testCollection.js" />
+    <Content Include="Javascript\app\controllers\testController.js" />
+    <Content Include="Javascript\vendor\flagOldIe.js" />
     <Content Include="Javascript\globals.js" />
-    <Content Include="Javascript\json2.js" />
-    <Content Include="Javascript\models\testModel.js" />
+    <Content Include="Javascript\vendor\json2.js" />
+    <Content Include="Javascript\app\models\testModel.js" />
     <Content Include="Javascript\requireText.js" />
-    <Content Include="Javascript\routers\testRouter.js" />
-    <Content Include="Javascript\templates\testTemplate.html" />
-    <Content Include="Javascript\views\testView.js" />
+    <Content Include="Javascript\app\routers\testRouter.js" />
+    <Content Include="Javascript\app\templates\testTemplate.html" />
+    <Content Include="Javascript\app\views\testView.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
