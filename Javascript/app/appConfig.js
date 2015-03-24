@@ -4,6 +4,6 @@ var ewnGlobals = {};
 ewnGlobals.config = {
     headertype: 'saw',
     footertype: 'mylni',
-    appname: "SEAP",
+    appname: "SMC",
     apptitle: "Secure Message Center"
 };

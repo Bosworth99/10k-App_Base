@@ -20,11 +20,8 @@
 </head>
 <body>
 
-    <script src="Javascript/appConfig.js"></script>
+    <script src="Javascript/app/appConfig.js"></script>
     <script controller="Javascript/index.js" src="<%=EWNBase%>/Javascript/ewnHeader.js"></script>
-
-    <!-- page scripts -->
-    <script src="Javascript/globals.js"></script>
 
     <h1 class="pageTitle">$appName$</h1>
    

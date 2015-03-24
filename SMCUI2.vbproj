@@ -117,9 +117,15 @@
     <Content Include="Build\r.js" />
     <Content Include="CSS\styles.css" />
     <Content Include="Default.aspx" />
-    <Content Include="Javascript\appConfig.js" />
-    <Content Include="Javascript\app\collections\testCollection.js" />
-    <Content Include="Javascript\app\controllers\testController.js" />
+    <Content Include="Javascript\app\appConfig.js" />
+    <Content Include="Javascript\app\core.js" />
+    <Content Include="Javascript\app\index.js" />
+    <Content Include="Javascript\app\module_inbox\controller.js" />
+    <Content Include="Javascript\app\module_inbox\index.js" />
+    <Content Include="Javascript\app\module_inbox\store.js" />
+    <Content Include="Javascript\app\module_inbox\view.js" />
+    <Content Include="Javascript\app\router.js" />
+    <Content Include="Javascript\app\utility.js" />
     <Content Include="Javascript\index.js" />
     <Content Include="Javascript\vendor\backbone.babysitter\Gruntfile.js" />
     <Content Include="Javascript\vendor\backbone.babysitter\lib\backbone.babysitter.js" />
@@ -174,7 +180,7 @@
     <Content Include="Javascript\vendor\backbone\index.html" />
     <Content Include="Javascript\vendor\backbone\index.js" />
     <Content Include="Javascript\vendor\flagOldIe.js" />
-    <Content Include="Javascript\globals.js" />
+    <Content Include="Javascript\app\globals.js" />
     <Content Include="Javascript\vendor\jquery\dist\jquery.js" />
     <Content Include="Javascript\vendor\jquery\dist\jquery.min.js" />
     <Content Include="Javascript\vendor\jquery\MIT-LICENSE.txt" />
@@ -262,11 +268,6 @@
     <Content Include="Javascript\vendor\jquery\src\var\toString.js" />
     <Content Include="Javascript\vendor\jquery\src\wrap.js" />
     <Content Include="Javascript\vendor\json2.js" />
-    <Content Include="Javascript\app\models\testModel.js" />
-    <Content Include="Javascript\requireText.js" />
-    <Content Include="Javascript\app\routers\testRouter.js" />
-    <Content Include="Javascript\app\templates\testTemplate.html" />
-    <Content Include="Javascript\app\views\testView.js" />
     <Content Include="Javascript\vendor\marionette\lib\backbone.marionette.js" />
     <Content Include="Javascript\vendor\marionette\lib\backbone.marionette.min.js" />
     <Content Include="Javascript\vendor\marionette\lib\core\backbone.marionette.js" />
@@ -362,6 +363,7 @@
     <Content Include="Javascript\vendor\momentjs\min\moment.min.js" />
     <Content Include="Javascript\vendor\momentjs\moment.js" />
     <Content Include="Javascript\vendor\orca-lni-utils-backbone-sync-shim\backbone.sync.shim.js" />
+    <Content Include="Javascript\vendor\requireText.js" />
     <Content Include="Javascript\vendor\underscore.string\camelize.js" />
     <Content Include="Javascript\vendor\underscore.string\capitalize.js" />
     <Content Include="Javascript\vendor\underscore.string\chars.js" />
