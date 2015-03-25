@@ -23,17 +23,14 @@ define(function(){
             console.log('App_Router::init');
 
             _dispatcher = Radio.channel('dispatcher');
-            _routes = {
-
-            };
+            _routes = {};
         }
 
         return {
             init:init
         };
 
-    };
-
+    });
 
     // EXPORT /////////////////////////////////////////////////////////////////
     return App_Router;

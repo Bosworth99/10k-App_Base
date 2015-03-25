@@ -3,8 +3,10 @@
 //  @package    : SMC
 //  @author     : josh@joshbosworth.com
 //  @comment    : 
-//     - define dependancies
-//     - initialize application
+//      - define dependancies
+//      - configure require 
+//      - shim DOM frameworks
+//      - initialize application
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -47,6 +49,7 @@
             paths: {
                 'backbone': 'vendor/backbone/backbone'
             },
+            deps    : [ "jquery", "underscore" ],
             shim: {
                 'backbone': { exports: 'Backbone' }
             }
@@ -92,7 +95,7 @@
             // expose app to global obj
             app.SMC = _smc;
 
-            console.log('index.js window.app:%o', app);
+            console.log('window.app:%o', app);
         });
 
     });

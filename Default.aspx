@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <script src="Javascript/app/appConfig.js"></script>
+    <script src="Javascript/appConfig.js"></script>
     <script controller="Javascript/index.js" src="<%=EWNBase%>/Javascript/ewnHeader.js"></script>
 
     <h1 class="pageTitle">$appName$</h1>

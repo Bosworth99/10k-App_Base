@@ -2,6 +2,7 @@
 //
 //  @package    : SMC
 //  @class      : App_Index
+//  @comment    : instantiate application core and apply static resources to the global app
 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -10,20 +11,20 @@ define(function(require){
     // @imports
     var App_Core    = require('app/core');
     var App_Utility = require('app/utility');
+    var App_Config  = require('app/config')
+    var App_Const   = require('app/const');
 
     // Class //////////////////////////////////////////////////////////////////
     var App_Index = function(){
 
-        console.log('App_Index');
-
         var _core       = new App_Core();
-        var _utility    = App_Utility();
-
         _core.init();
 
         return {
-            Core : _core,
-            Utility : _utility
+            Core        : _core,
+            Config      : App_Config,
+            Const       : App_Const,
+            Utility     : App_Utility
         }
 
 	};
