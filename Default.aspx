@@ -24,6 +24,7 @@
     <script controller="Javascript/index.js" src="<%=EWNBase%>/Javascript/ewnHeader.js"></script>
 
     <h1 class="pageTitle">$appName$</h1>
+    <section id="SMC"></section>
    
     <script src="<%=EWNBase%>/Javascript/ewnLegalFooter.js"></script>
 

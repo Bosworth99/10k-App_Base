@@ -1,11 +1,11 @@
 ﻿///////////////////////////////////////////////////////////////////////////////
 //
-//  @class      : App_Router
+//  @class      : Router
 //  @comment    : 
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-define(function(){
+define(function(require){
     "use strict";
 
     // INCLUDES ///////////////////////////////////////////////////////////////
@@ -13,25 +13,25 @@ define(function(){
     var Radio       = require('backbone.radio');
 
     // CLASS //////////////////////////////////////////////////////////////////
-    var App_Router = Marionette.AppRouter.extend( function(){
+    var Router = new Marionette.AppRouter.extend( function(){
 
         // PRIVATE
         var _dispatcher;
         var _routes;
 
-        function init(){
-            console.log('App_Router::init');
+        function initialize(){
+            console.log('Router::init');
 
             _dispatcher = Radio.channel('dispatcher');
             _routes = {};
         }
 
         return {
-            init:init
+            initialize : initialize
         };
 
-    });
+    }());
 
     // EXPORT /////////////////////////////////////////////////////////////////
-    return App_Router;
+    return Router;
 });

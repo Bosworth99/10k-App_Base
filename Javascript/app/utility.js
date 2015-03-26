@@ -9,7 +9,7 @@ define( function(require){
 
     // INCLUDES ///////////////////////////////////////////////////////////////
     var $     = require('jquery');
-    var _     = require('underscore'); 
+    var _     = require('underscore');
 
     // Class //////////////////////////////////////////////////////////////////
     return {

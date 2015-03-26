@@ -1,40 +1,50 @@
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 //
-//  @package    : SMC
-//  @class      : App_Core
+//  @class      : Core
 // 	@comment	: control the instantiation and lifecycle of all app modules 
 //
-///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 
 define(function(require){
+    "use strict";
 
 	// INCLUDES ///////////////////////////////////////////////////////////////
 	var Marionette 	= require('backbone.marionette');
-	var App_Router  = require('app/router');
-
+	var Router  	= require('router');
+	var Inbox 		= require('inbox/index')
 
     // CLASS //////////////////////////////////////////////////////////////////
-    var App_Core = function(){
+    var Core = function(){
 
-    	// module instances 
-    	var _router;
+    	var SMC;
+    	var _inbox;
+
+		function init(){
+			console.log('Core::init SMC:%o', SMC);
+
+			SMC = new Marionette.Application();
+
+			_inbox = SMC.module('inbox');
+
+		}
+			
 
 
-    	function init(){
-    		console.log('App_Core::init');
+		function start(){
 
-    		_router     = new App_Router();
+			SMC.start();
+		}
 
 
+		return {
+			init : init,
+			start : start,
+			stop : stop
+		}
 
-    	}
-   		
-    	return {
-    		init : init
-    	}
 	};
     
     // EXPORT /////////////////////////////////////////////////////////////////
-	return App_Core;
+	return Core;
 
 });
