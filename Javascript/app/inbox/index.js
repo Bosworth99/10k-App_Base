@@ -10,25 +10,42 @@ define(function(require){
     "use strict";
 
 	// INCLUDES ///////////////////////////////////////////////////////////////
-	var Radio = require('backbone.radio');
+    var Marionette          = require('backbone.marionette');
+	var Radio               = require('backbone.radio');
+    
+    var Inbox_Controller    = require('inbox/controller');
 
     // CLASS //////////////////////////////////////////////////////////////////
-    var Inbox_Index = function(){
+    var Inbox_Index         = Marionette.Module.extend(function(){
 
-    	// module instances 
+    	// @private
+        var _self;
         var _dispatcher;
+        var _controller;
+        var _store;
+        var _view;
 
-    	function init(){
-    		console.log('Inbox_Index::init');
+    	function initialize(){
+    		console.log('Inbox_Index::initialize');
 
+            _self           = this;
             _dispatcher     = Radio.channel('dispatcher');
+
+            // instance components
+            _controller     = new Inbox_Controller();
     	}
    		
+        function start(){
+            _dispatcher.trigger('module:inbox:start');
+            _controller.start();
+        }
+
     	return {
-    		init : init
+            initialize : initialize,
+            start : start
     	}
-	};
-    
+	}());
+
     // EXPORT /////////////////////////////////////////////////////////////////
 	return Inbox_Index;
 

@@ -16,14 +16,19 @@ define(function(require){
     var Backbone    = require('backbone');
     var Marionette  = require('backbone.marionette');
     var Router      = require('router');
+    var Radio       = require('backbone.radio');
+
+    // @modules
     var Inbox       = require('inbox/index');
 
-    var Radio       = require('backbone.radio');
 
     // CLASS //////////////////////////////////////////////////////////////////
     var SMC         = Marionette.Application.extend(function(){
 
-        var _inbox;
+        console.log('%s v%s', Config.name, Config.version);
+        
+        // @private
+        var _self;
         var _dispatcher;
         var _router;
 
@@ -31,20 +36,48 @@ define(function(require){
         function initialize(){
             console.log('SMC::initialize');
 
+            // assign context
+            _self           = this;
+
+            // assign configurations
+            Radio.DEBUG     = Config.Debug;
+
             // assign globals 
-            this.Utility    = Utility;
-            this.Config     = Config;
-            this.Const      = Const;
+            _self.utility   = Utility;
+            _self.config    = Config;
+            _self.const     = Const;
 
             _router         = Router;
             _dispatcher     = Radio.channel('dispatcher');
 
-            _inbox          = new Inbox();
-            _inbox.init();
+            addEventHandlers();
+            assembleModules();
+        }
+
+        /*
+            SMC global events
+        */
+        function addEventHandlers(){
+
+            /*_self.listenTo(_dispatcher, 'module:inbox:start', function(){ 
+                console.log('module:inbox:start captured'); 
+            });*/
+        }
+
+        /*
+            once configs and events have been set, instantiate app modules
+        */
+        function assembleModules(){
+
+            _self.module('inbox', Inbox);
+
         }
 
         function start(){
 
+            console.log('SMC::start');
+
+            _self.module('inbox', Inbox).start();
 
             if(Backbone.history){
                 Backbone.history.start();

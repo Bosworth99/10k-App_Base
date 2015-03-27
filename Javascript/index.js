@@ -93,10 +93,8 @@
             var _smc = new SMC();
             _smc.start();
 
-            // expose app to global obj
+            // assign app to global obj
             app = _smc;
-
-            console.log('app:%o', app);
         });
     });
 

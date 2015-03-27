@@ -1,7 +1,7 @@
 ﻿///////////////////////////////////////////////////////////////////////////////
 //
 //  @class      : Router
-//  @comment    : 
+//  @comment    : Singleton instance of the router class
 //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -13,9 +13,9 @@ define(function(require){
     var Radio       = require('backbone.radio');
 
     // CLASS //////////////////////////////////////////////////////////////////
-    var Router = new Marionette.AppRouter.extend( function(){
+    var Router = Marionette.AppRouter.extend( function(){
 
-        // PRIVATE
+        // @private
         var _dispatcher;
         var _routes;
 
@@ -33,5 +33,5 @@ define(function(require){
     }());
 
     // EXPORT /////////////////////////////////////////////////////////////////
-    return Router;
+    return (Router)? Router : new Router();
 });

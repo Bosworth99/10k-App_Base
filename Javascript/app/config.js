@@ -3,16 +3,12 @@
 //  @class      : App_Config
 //  @comment    : configuration
 //
-//      
 ///////////////////////////////////////////////////////////////////////////
 
 define( function(){
     return {
-
+        name 	: "Secure Message Center",
         version : 0.1,
-
-        // activate trace?
-        debug   : { enabled : false}
-        
+        debug   : true
     }
 });

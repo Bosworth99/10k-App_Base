@@ -118,6 +118,7 @@
     <Content Include="CSS\styles.css" />
     <Content Include="Default.aspx" />
     <Content Include="Javascript\appConfig.js" />
+    <Content Include="Javascript\app\app.js" />
     <Content Include="Javascript\app\config.js" />
     <Content Include="Javascript\app\const.js" />
     <Content Include="Javascript\app\core.js" />
@@ -125,7 +126,6 @@
     <Content Include="Javascript\app\inbox\index.js" />
     <Content Include="Javascript\app\inbox\store.js" />
     <Content Include="Javascript\app\inbox\view.js" />
-    <Content Include="Javascript\app\index.js" />
     <Content Include="Javascript\app\router.js" />
     <Content Include="Javascript\app\utility.js" />
     <Content Include="Javascript\index.js" />
