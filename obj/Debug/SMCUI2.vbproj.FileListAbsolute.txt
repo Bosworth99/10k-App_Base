@@ -1,8 +1,0 @@
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\bin\SMCUI2.dll
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\bin\SMCUI2.pdb
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\bin\SMCUI2.xml
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\obj\Debug\SMCUI2.Resources.resources
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\obj\Debug\SMCUI2.vbproj.GenerateResource.Cache
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\obj\Debug\SMCUI2.dll
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\obj\Debug\SMCUI2.xml
-D:\SecureMsgCtr\Main\Source\SMCUI2\SMCUI2\obj\Debug\SMCUI2.pdb
